@@ -1,0 +1,129 @@
+@import url('varibalse.css');
+.p-text{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+body{
+    overflow-x: hidden;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,p{
+    margin: 0;
+}
+div,input{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var( --main-font-famali);
+    
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+.header{
+    background: var(--main-bg-color);
+    min-height: 850px;
+    padding: 0 20px;
+   
+}
+.up-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.menu-header{
+    min-width: 321px;
+}
+.header-douwn{
+    min-height: 380px;
+    background: white;
+    
+    z-index: 99;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: -200px;
+    
+}
+.hero{
+    min-height: 700px;
+    background: var(--second-bg-color);
+}
+.title{
+    font-size: 48px;
+    line-height: 58px;
+    font-family: var(--second-font-famali);
+    font-weight: var( --font-weight-regular);
+}
+.header-title{
+    width: 410px;
+    margin-bottom: 24px;
+
+}
+.content{
+    width: 576px;
+    font-family: var(--main-font-famali);
+    font-size: var(--font-reg);
+    font-weight: var( --font-weight-regular);
+    line-height: 30px;
+    color: var(--text-p-color);
+    margin-bottom: 32px;
+}
+.content span{
+    font-size: 16px;
+}
+.content-b{
+    font-size: 17px;
+    color: var(--text-color);
+}
+.header-search{
+    position: relative;
+}
+.header-input{
+    border-radius: 30px;
+    border: none;
+    height: 50px;
+    width: 425px;
+    padding: 0 20px;
+    padding-right: 210px;
+    font-family: var(--main-font-famali);
+    font-size: var(--font-reg);
+    font-weight: var( --font-weight-regular);
+    line-height: 30px;
+    color: var(--text-p-color);
+    margin-bottom: 100px;
+}
+
+.header-btn{
+    background: var(--text-color);
+    color: white;
+    height: 40px;
+    width: 180px;
+    font-family: var(--second-font-famali);
+    font-weight: var( --font-weight-regular);
+    font-size: 14px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    position: absolute;
+    left: 230px;
+    top:5px;
+}
+.header-img{
+    position: absolute;
+    right: 0%;
+    top:23%;
+}
