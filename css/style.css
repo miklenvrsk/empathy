@@ -24,7 +24,7 @@ div,input{
 a{
     text-decoration: none;
     color: var(--text-color);
-    font-family: var( --main-font-famali);
+    font-family: var(--main-font-famali), serif;
     
 }
 .container{
@@ -51,16 +51,26 @@ a{
 .header-douwn{
     min-height: 380px;
     background: white;
+    text-align: center;
     
     z-index: 99;
     width: 100%;
     border-radius: 8px;
     margin-bottom: -200px;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
+}
+.douwn-title{
+    font-size: 32px;
+    margin-bottom: 24px;
 }
 .hero{
     min-height: 700px;
-    background: var(--second-bg-color);
+    background: url("../img/bg1.png")bottom -240px left 0 no-repeat,linear-gradient(var(--second-bg-color), var(--second-bg-color));
 }
 .title{
     font-size: 48px;
@@ -82,6 +92,9 @@ a{
     color: var(--text-p-color);
     margin-bottom: 32px;
 }
+.contend-dw{
+    width: 672px;
+}
 .content span{
     font-size: 16px;
 }
@@ -97,8 +110,7 @@ a{
     border: none;
     height: 50px;
     width: 425px;
-    padding: 0 20px;
-    padding-right: 210px;
+    padding: 0 210px 0 20px;
     font-family: var(--main-font-famali);
     font-size: var(--font-reg);
     font-weight: var( --font-weight-regular);
@@ -124,6 +136,59 @@ a{
 }
 .header-img{
     position: absolute;
-    right: 0%;
+    right: 0;
     top:23%;
+
 }
+.btn{
+    position: static;
+    background: white;
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    width: 142px;
+}
+.hero-con{
+    padding-top: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.hero-title{
+    font-weight: 700;
+    font-size: 48px;
+
+}
+.title-tody{
+    font-family: var(--main-font-famali), serif;
+}
+.hero-list{
+    counter-reset: num;
+    list-style-type: none;
+}
+.hero-list .item{
+    position: relative;
+    margin: 0 0 0 0;
+    padding: 0 0 20px 0;
+    line-height: 1.4;
+}
+.hero-list .item:before{
+    content: counter(num);
+    counter-increment: num;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: -58px;
+    width: 40px;
+    height: 40px;
+
+    background: var(--text-color);
+    color: white;
+    text-align: center;
+    line-height: 28px;
+    font-size: 18px;
+    border-radius: 50%;
+    font-family: var(--main-font-famali);
+    border: 1px solid #ef6780;
+}
+
