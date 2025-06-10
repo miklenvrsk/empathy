@@ -191,4 +191,34 @@ a{
     font-family: var(--main-font-famali);
     border: 1px solid #ef6780;
 }
+.app{
+    min-height: 3480px;
+    background: #f5efe9;
+}
+.con-app{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.app-title{
+    font-size: 32px;
+    font-weight: 700;
+}
+.contend-app{
+    text-align: right;
+    margin-top: 287px;
+}
+.app-desc{
+    font-family: var(--main-font-famali), serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--text-p-color);
+
+}
+.app-img{
+    margin-top: 80px;
+}
+.text-left{
+    text-align: left;
+}
 
